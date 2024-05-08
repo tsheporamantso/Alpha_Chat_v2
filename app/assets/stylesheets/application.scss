@@ -17,5 +17,19 @@
  @import "bootstrap";
 
  .navbar {
-  background-color: #FDF6EA !important;
+  background-color: black !important;
 }
+
+.nav-link {
+  color: white !important;
+}
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
