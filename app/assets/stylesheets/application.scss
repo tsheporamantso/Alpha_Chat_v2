@@ -14,9 +14,9 @@
  *= require_self
  */
 
- @import "bootstrap";
+@import "bootstrap";
 
- .navbar {
+.navbar {
   background-color: black !important;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .jumbotron {
-  background-image: asset-url('writing.jpg');
+  background-image: url('writing.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -62,6 +62,6 @@ body {
   background-color: lightgrey;
 }
 
-#sticky-footer {
-  flex-shrink: none;
-}
+// #sticky-footer {
+//   flex-shrink: none;
+// }
