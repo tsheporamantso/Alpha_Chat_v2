@@ -71,6 +71,6 @@ group :test do
   gem 'selenium-webdriver'
 end
 
-gem 'will_paginate', '~> 4.0'
 gem 'bootstrap'
 gem 'sassc-rails'
+gem 'will_paginate', '~> 4.0'
