@@ -1,7 +1,7 @@
-require "test_helper"
+require 'test_helper'
 
 class CreateCategoryTest < ActionDispatch::IntegrationTest
-  test "get new category form and creat category" do
+  test 'get new category form and creat category' do
     get new_category_path
     assert_response :success
     assert_difference 'Category.count', 1 do

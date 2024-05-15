@@ -1,7 +1,7 @@
 class CategoriesController < ApplicationController
   def index; end
 
-  def new 
+  def new
     @category = Category.new
   end
 
@@ -16,7 +16,7 @@ class CategoriesController < ApplicationController
     end
   end
 
-  def show 
+  def show
     @category = Category.find(params[:id])
   end
 
