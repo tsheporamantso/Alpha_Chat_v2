@@ -1,14 +1,9 @@
 class CategoriesController < ApplicationController
-  
-  def index
-  end
-  
-  def new
-  end
+  def index; end
 
-  def show
-  end
+  def new; end
 
-  def edit
-  end
+  def show; end
+
+  def edit; end
 end
