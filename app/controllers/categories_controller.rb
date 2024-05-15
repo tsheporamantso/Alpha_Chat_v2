@@ -9,9 +9,10 @@ class CategoriesController < ApplicationController
     @category = Category.new(category_params)
 
     if @category.save
+      flash[:notice] = 'Category was successfully created.'
       redirect_to category_path(@category)
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 
