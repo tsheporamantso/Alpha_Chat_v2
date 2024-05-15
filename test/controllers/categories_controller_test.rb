@@ -29,6 +29,6 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
    assert_difference('Category.count', 1) do
      post categories_path, params: { category: { name: 'Travel' } }  
    end
-    assert_redirected_to categories_path(Category.last)
+    assert_redirected_to category_path(Category.last)
   end
 end
