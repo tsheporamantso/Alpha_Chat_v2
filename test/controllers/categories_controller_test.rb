@@ -7,17 +7,22 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should get index' do
-    get categories_url
+    get categories_path
     assert_response :success
   end
 
   test 'should get new' do
-    get new_category_url
+    get new_category_path
     assert_response :success
   end
 
   test 'should get show' do
-    get category_url(@category)
+    get category_path(@category)
+    assert_response :success
+  end
+
+  test 'should get edit' do
+    get edit_category_path(@category)
     assert_response :success
   end
 end
