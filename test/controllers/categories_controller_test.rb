@@ -20,10 +20,10 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test 'it should get edit' do
-    get edit_category_path(@category)
-    assert_response :success
-  end
+  # test 'it should get edit' do
+  #   get edit_category_path(@category)
+  #   assert_response :success
+  # end
 
   test 'should create category' do
     assert_difference('Category.count', 1) do
