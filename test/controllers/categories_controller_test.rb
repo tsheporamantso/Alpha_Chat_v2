@@ -10,4 +10,9 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
     get categories_path
     assert_response :success 
   end
+
+  test 'it should get new' do
+    get new_category_path
+    assert_response :success
+  end
 end
