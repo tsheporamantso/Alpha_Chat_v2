@@ -22,7 +22,7 @@ class CreateCategoryTest < ActionDispatch::IntegrationTest
     get new_category_path
     assert_response :success
     assert_no_difference 'Category.count' do
-      post categories_path, params: { category: { name: '' } }
+      post categories_path, params: { category: { name: 'a' * 31 } }
     end
     assert_select 'div.alert'
     assert_select 'h4.alert-heading'
