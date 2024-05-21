@@ -105,14 +105,6 @@ Install this project with:
   rails db:migrate
 ```
 
-```sh
-  gem install factory_bot_rails -v 6.2.0
-```
-
-```sh
-  rails generate rspec:install
-```
-
 ### Usage
 
 To run the project, execute the following command:
@@ -127,7 +119,7 @@ run the result on the terminal through:
 To run tests, execute the following command on the terminal:
 
 ```sh
-  bundle exec rspec
+  rails test
 ```
 
 ### Deployment
